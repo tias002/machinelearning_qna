@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+ *{
+    
+    box-sizing: border-box;
+ }
+ body{
+     font-family: 'Quicksand', sans-serif;
+     background-color:rgb(255, 255, 255);
+     
+     
+    
+ }
+ .main-container{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content:center;
+    margin-top: 100px;
+ }
+ .wrap{
+     background-color:rgb(238, 178, 49);
+     border:1px solid rgba(0, 0, 0, 0.37);
+     margin:10px 0;
+     padding:20px;
+     position:relative;
+     width:600px;
+}
+.wrap.active{
+    margin:0 40px 0 0;
+    background-color:rgb(245, 226, 186);
+    position:relative;
+    padding:20px;
+    width:605px;
+    margin:3px;
+
+}
+.wrap-title{
+    margin:0 35px 0 0;
+    font-size: 1.2rem;
+    
+   
+}
+.wrap-text{
+    display:none;
+    margin:30px;
+}
+.wrap.active .wrap-text{
+    display:block;
+    font-weight:800;
+}
+.wrap-toggle{
+    background-color: transparent;
+    border :0;
+    cursor : pointer;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    position:absolute;
+    top: 20px;
+    right:30px;
+    width:30px;
+    height:30px;
+}
+.wrap-toggle .fa-chevron-circle-down{
+    font-size:1.5rem;
+
+}
+.wrap-toggle .fa-times{
+    font-size:1.5rem;
+
+}
+.wrap-toggle:focus{
+    outline:none;
+}
+.wrap-toggle .fa-times{
+    display: none;
+
+}
+.wrap.active .wrap-toggle .fa-times{
+    display: block;
+
+}
+.wrap.active .wrap-toggle .fa-chevron-circle-down{
+    display:none;
+
+}
